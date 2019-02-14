@@ -31,6 +31,10 @@ table{border-collapse:collapse;border-spacing:0}
 	*zoom: 1;
 }
 
+.body {
+  max-width: 100vw;
+}
+
 .clear{
     clear: both;
 }
@@ -42,9 +46,10 @@ table{border-collapse:collapse;border-spacing:0}
 }
 
 .row {
-    width: 90%;
+    width: 100%;
     margin: 0 auto 15px auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col-1 {
@@ -95,10 +100,15 @@ table{border-collapse:collapse;border-spacing:0}
     width: 100%;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* =Header
 -----------------------------------------------------------------------------*/
 
 .navbar {
+  width: 100%;
   background-color: #004861;
   padding: 16px 0 1px 0;
 }
@@ -107,9 +117,62 @@ table{border-collapse:collapse;border-spacing:0}
   color: white;
   font-size: 1.25em;
   cursor: pointer;
+  margin-left: 15px;
 }
 
 .logo {
   margin: 5px auto 0 auto;
   display: block;
+}
+
+/* =Destaques
+-----------------------------------------------------------------------------*/
+
+.destaques-artigo img {
+  width: 100%;
+}
+
+.destaques-content {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.segundos-img img {
+  width: 100%;
+}
+
+.segundos-content {
+  margin-left: 8.33%;
+}
+
+.article-spacing-top {
+  border-top: 1px solid #DADADA;
+  margin-top: 20px;
+  padding-top: 35px;
+}
+
+.head-img img {
+  width: 100%;
+}
+
+.head-text {
+  margin-left: 8.33%;
+}
+
+.content-share {
+  margin-left: 8.33%;
+}
+
+/* =Propaganda
+-----------------------------------------------------------------------------*/
+
+.advertise {
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+}
+
+.advertise img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -2;
 }
